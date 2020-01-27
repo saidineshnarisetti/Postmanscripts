@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "title": "Updated Title",
+      "author": "Updated Author"
+    },
+    {
+      "id": 1,
+      "title": "Updated Title1",
+      "author": "Updated Author"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 40,
+      "title": "Test PUT method",
+      "author": "Dinesh Author"
+    },
+    {
+      "id": 4,
+      "title": "Test PUT method",
+      "author": "Dinesh Author"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

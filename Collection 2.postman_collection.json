@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "d7294f6b-f413-4ea0-832f-676c4eb784ae",
+		"name": "Collection 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Testfile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c396ae5-423a-425a-9c34-82ffc43efa2e",
+						"exec": [
+							"// console.log(request.data)",
+							"// console.log(request.url)",
+							"// console.log(request.method)",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(5000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "46d7a502-c8ab-404f-99cc-c12989d1ef69",
+						"exec": [
+							"//postman.setEnvironmentVariable(\"pfurls\",\"https://apps.juniper.net/\")",
+							"//postman.clearEnvironmentVariable(\"pfurls\")",
+							"//postman.clearEnvironmentVariables()",
+							"",
+							"// Set global variable ",
+							"//postman.setGlobalVariable(\"pfurls\",\"https://apps.juniper.net/\")",
+							"// postman.getGlobalVariable(\"pfurls\")",
+							"postman.clearGlobalVariable(\"pfurls\")"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apps.juniper.net/telemetry-explorer/",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"juniper",
+						"net"
+					],
+					"path": [
+						"telemetry-explorer",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

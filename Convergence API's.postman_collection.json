@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "42c48f1e-829a-48a7-ac2e-b8ab85bec9dd",
+		"name": "Convergence API's",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Left nav",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "42ad6a01-9cd8-4bb8-82ad-a26bf146b150",
+						"exec": [
+							"pm.test(\"response code is 200 for Left nav\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{pf_home}}assets/public/html/index.html",
+					"host": [
+						"{{pf_home}}assets"
+					],
+					"path": [
+						"public",
+						"html",
+						"index.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Appmenu",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "076f1a23-8041-4fc2-a2ae-3bbebfe23f9d",
+						"exec": [
+							"pm.test(\"response code is 200 for Appmenu\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Verifying First Url\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData[0].appURL).to.eql(\"https://apps-stage.juniper.net/home/\");",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"saidinesh@juniper.net\"\n\t\n}"
+				},
+				"url": {
+					"raw": "{{pf_home_stage}}appList/int",
+					"host": [
+						"{{pf_home_stage}}appList"
+					],
+					"path": [
+						"int"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Home page Segments",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "58bd82c9-d1c1-4a04-8169-a6cfc5fe4392",
+						"exec": [
+							"pm.test(\"response code is 200 for Home page Segments\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{pf_home_stage}}segments",
+					"host": [
+						"{{pf_home_stage}}segments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product segments",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b1599af0-a691-4b84-96ec-26dc08aaf8a2",
+						"exec": [
+							"pm.test(\"response code is 200 for Product segments\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{pf_home_stage}}products?segment=Cloud%20Providers&subSegment=Campus",
+					"host": [
+						"{{pf_home_stage}}products"
+					],
+					"query": [
+						{
+							"key": "segment",
+							"value": "Cloud%20Providers"
+						},
+						{
+							"key": "subSegment",
+							"value": "Campus"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Overview",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{pf_home_stage}}getProductOverview?product=MX2020",
+					"host": [
+						"{{pf_home_stage}}getProductOverview"
+					],
+					"query": [
+						{
+							"key": "product",
+							"value": "MX2020"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

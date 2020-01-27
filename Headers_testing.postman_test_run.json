@@ -1,0 +1,332 @@
+{
+	"id": "971300fb-b175-4671-8049-13264264de28",
+	"name": "Headers_testing",
+	"allTests": [],
+	"timestamp": "2019-05-31T10:31:52.258Z",
+	"collection_id": "506bcdb8-9ecc-4b6e-b614-28346cd62a4a",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "53dd805a-5585-4a90-8fa5-faf321b58456",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "506bcdb8-9ecc-4b6e-b614-28346cd62a4a",
+		"name": "Headers_testing",
+		"description": "",
+		"auth": null,
+		"events": null,
+		"variables": [],
+		"order": [
+			"4a1eff76-7391-4762-b169-acda8e682a00",
+			"8cb67b72-f1de-4ff5-8964-06842a7e8901",
+			"0078e5f2-c744-428c-b0c7-f334541eb1f8",
+			"0934d1ae-23ea-462b-bd72-34d5cee010f9",
+			"ab22d7b6-56ef-4f0d-87df-445670bb5a9d"
+		],
+		"folders_order": [],
+		"owner": "6833764",
+		"favorite": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [
+		{
+			"key": "",
+			"value": "",
+			"description": "",
+			"enabled": false
+		},
+		{
+			"key": "studenid",
+			"value": "4093",
+			"enabled": true
+		},
+		{
+			"key": "localid",
+			"value": "5",
+			"enabled": true
+		}
+	],
+	"results": [
+		{
+			"name": "telemetry",
+			"id": "4a1eff76-7391-4762-b169-acda8e682a00",
+			"url": "https://apps-stage.juniper.net/telemetry-explorer/getTree/17.1R1/All/Junos%20OS?_=1559295368059",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Validating fixed header in telemetry": true
+			},
+			"testPassFailCounts": {
+				"Validating fixed header in telemetry": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"1206"
+			],
+			"allTests": [
+				{
+					"Validating fixed header in telemetry": true
+				}
+			],
+			"time": "1206",
+			"totalRequestTime": "1206",
+			"iterationResults": {}
+		},
+		{
+			"name": "compliance",
+			"id": "8cb67b72-f1de-4ff5-8964-06842a7e8901",
+			"url": "https://apps-stage.juniper.net/compliance/getCompliance.html?p=OAC%20FIPS%20Edition&t=product",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Validating fixed header in compliance": true
+			},
+			"testPassFailCounts": {
+				"Validating fixed header in compliance": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"296"
+			],
+			"allTests": [
+				{
+					"Validating fixed header in compliance": true
+				}
+			],
+			"time": "296",
+			"totalRequestTime": "296",
+			"iterationResults": {}
+		},
+		{
+			"name": "FE",
+			"id": "0078e5f2-c744-428c-b0c7-f334541eb1f8",
+			"url": "https://apps-stage.juniper.net/feature-explorer/getPlatformFeaturesGroupBySwRel.html?swName=Junos%20OS&release=19.1R1&platform=MX2020",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Validating fixed header in FE": true
+			},
+			"testPassFailCounts": {
+				"Validating fixed header in FE": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"2823"
+			],
+			"allTests": [
+				{
+					"Validating fixed header in FE": true
+				}
+			],
+			"time": "2823",
+			"totalRequestTime": "2823",
+			"iterationResults": {}
+		},
+		{
+			"name": "CMT",
+			"id": "0934d1ae-23ea-462b-bd72-34d5cee010f9",
+			"url": "https://apps-stage.juniper.net/cmt/selectedProduct/Switching/Data%20Center/Juniper/EX3200",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Validating fixed header in FE": true
+			},
+			"testPassFailCounts": {
+				"Validating fixed header in FE": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"244"
+			],
+			"allTests": [
+				{
+					"Validating fixed header in FE": true
+				}
+			],
+			"time": "244",
+			"totalRequestTime": "244",
+			"iterationResults": {}
+		},
+		{
+			"name": "Syslog",
+			"id": "ab22d7b6-56ef-4f0d-87df-445670bb5a9d",
+			"url": "https://apps-stage.juniper.net/syslog-explorer/getAllMessagesForRelease/Junos%20OS/19.1R1/0",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Validating fixed header in FE": true
+			},
+			"testPassFailCounts": {
+				"Validating fixed header in FE": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"279"
+			],
+			"allTests": [
+				{
+					"Validating fixed header in FE": true
+				}
+			],
+			"time": "279",
+			"totalRequestTime": "279",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 5,
+	"totalFail": 0,
+	"totalTime": 4848,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "telemetry",
+			"id": "4a1eff76-7391-4762-b169-acda8e682a00",
+			"url": "https://apps-stage.juniper.net/telemetry-explorer/getTree/17.1R1/All/Junos%20OS?_=1559295368059",
+			"time": "2019-05-31T10:31:52.258Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Validating fixed header in telemetry": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "compliance",
+			"id": "8cb67b72-f1de-4ff5-8964-06842a7e8901",
+			"url": "https://apps-stage.juniper.net/compliance/getCompliance.html?p=OAC%20FIPS%20Edition&t=product",
+			"time": "2019-05-31T10:31:52.258Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Validating fixed header in compliance": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "FE",
+			"id": "0078e5f2-c744-428c-b0c7-f334541eb1f8",
+			"url": "https://apps-stage.juniper.net/feature-explorer/getPlatformFeaturesGroupBySwRel.html?swName=Junos%20OS&release=19.1R1&platform=MX2020",
+			"time": "2019-05-31T10:31:52.258Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Validating fixed header in FE": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "CMT",
+			"id": "0934d1ae-23ea-462b-bd72-34d5cee010f9",
+			"url": "https://apps-stage.juniper.net/cmt/selectedProduct/Switching/Data%20Center/Juniper/EX3200",
+			"time": "2019-05-31T10:31:52.258Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Validating fixed header in FE": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Syslog",
+			"id": "ab22d7b6-56ef-4f0d-87df-445670bb5a9d",
+			"url": "https://apps-stage.juniper.net/syslog-explorer/getAllMessagesForRelease/Junos%20OS/19.1R1/0",
+			"time": "2019-05-31T10:31:52.258Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Validating fixed header in FE": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
